@@ -9,16 +9,22 @@ header {
     padding: 16px 0;
     background-color: #1e4496;
     color: #ecf0f1;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 header h1 {
-    max-width: 1280px;
-    width: 100%;
     font-style: italic;
 }
 
-header a {
-    display: inline;
+header nav a {
     margin: 12px;
     font-size: 1em;
     color: #ecf0f1;
@@ -31,6 +37,7 @@ header a {
     max-width: 1280px;
     width: 100%;
     margin: 0 auto;
+    
 }
 
 header .container,
@@ -43,6 +50,7 @@ section .container {
 section .container {
     align-items: flex-start;
 }
+
 
 section {
     padding: 32px;
@@ -60,13 +68,17 @@ hr {
 }
 
 section p {
-    margin-top: 32px;
+    margin-top: 26px;
     font-size: 1em;
+    margin-bottom: 26px ;
 }
 
 .store-front {
     margin-right: 32px;
     margin-bottom: 32px;
+    width: 420px;
+    height: 420px;
+
 }
 
 #produtos {
@@ -76,9 +88,107 @@ section p {
     padding: 0;
 }
 
-article {
-    
-    align-items: center;
-    display: inline;
+.produtos {
+    display: flex;
 }
 
+article img {
+    width: 310px;
+    height: 310px;
+    margin-bottom: 24px;
+}
+
+.produtos button {
+    background-color: #4362a3;
+    height: 36px;
+    width: 310px;
+    color: #ecf0f1;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 640px) {
+    header {
+        width: 100%;
+    }
+
+    header h1 {
+        font-style: italic;
+        font-size: 40px;
+        margin-left: 60px;
+    }
+    
+    header nav a {
+        font-size: 22px;
+        text-align: left;
+        display: block;
+        margin-right: 150px;
+    }
+
+    section .container {
+        display: block;
+    }
+
+    hr {
+        border: 1px solid #1e4496;
+        margin-bottom: 32px;
+    }
+
+    #linha {
+        margin-right: 60px;
+    }
+
+    section p {
+        margin-top: 24px;
+        font-size: 14px;
+    }
+
+    .store-front {
+        width: 310px;
+        height: 310px;
+    }
+
+    #produtos {
+        margin-left: 24px;
+    }
+
+    article {
+        width: 330px;
+        height: 500px;
+
+    }
+    
+    article img {
+        width: 320px;
+        height: 320px;
+        margin-bottom: 24px;
+        margin-top: 24px;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    .produtos {
+        display: block;
+    }
+    
+    .produtos button {
+        background-color: #4362a3;
+        margin-top: 16px;
+        height: 36px;
+        width: 320px;
+        color: #ecf0f1;
+        font-size: 1em;
+        font-weight: bold;
+        cursor: pointer;
+        border: none;
+        border-radius: 4px;
+        margin: 0 auto;
+    }
+
+}
